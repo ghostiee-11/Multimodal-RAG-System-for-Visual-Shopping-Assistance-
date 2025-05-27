@@ -1,5 +1,6 @@
 # Multimodal RAG System for Visual Shopping Assistance
-Deployed on https://multimodal-deployment.vercel.app/ try it once
+Deployed locally on https://multimodal-deployment.vercel.app/
+
 
 This project implements a progressively developed **Multimodal Retrieval-Augmented Generation (RAG)** system to answer e-commerce product queries using both **textual** and **visual data**. Built for the **headphones** category on Amazon.in, it leverages product specifications, user reviews, images, BLIP captions, and OCR-derived text to provide grounded, context-aware responses via Google Gemini.
 
