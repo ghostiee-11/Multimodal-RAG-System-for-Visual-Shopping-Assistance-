@@ -7,7 +7,7 @@ Pillow==11.2.1
 pinecone==7.0.1
 protobuf==4.25.3
 pytesseract==0.3.13
-pytesseract==0.3.10
+pytesseract>=0.3.13
 python-dotenv==1.1.0
 rapidfuzz==3.13.0
 Requests==2.32.3
