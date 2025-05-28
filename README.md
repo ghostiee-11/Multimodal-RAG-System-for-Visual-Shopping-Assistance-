@@ -15,7 +15,7 @@ The system evolves across three major iterations:
 | 1         | Basic RAG using text-only chunks and a single BLIP caption per image | `main_assistant.py`           |
 | 2         | Adds multiple BLIP captions and ViLT-based reranking           | `main_assistant_new.py`       |
 | 3         | Integrates filtered BLIP captions and OCR text into a unified retrieval pipeline | `main_assistant_new_one.py` (Recommended) |
-
+| 4         | Integrates filtered BLIP captions and OCR text into a hybrid searching unified retrieval pipeline | `main_assistant_new_one_hyb.py` (Recommended) |
 ---
 
 ## Recommended File Structure
@@ -31,6 +31,7 @@ For smooth execution across embedding, retrieval, and assistant pipelines, flatt
 ├── retriever.py                   # Iteration 1 retriever
 ├── retriever_new.py               # Iteration 2 retriever
 ├── retriever_new_one.py           # Iteration 3 retriever
+├── retriever_new_one_hyb.py       # Iteration 3 retriever+hyb searching 
 
 ├── llm_handler.py                 # Iteration 1 LLM handler
 ├── llm_handler_new.py             # Iteration 2 LLM handler
@@ -39,7 +40,7 @@ For smooth execution across embedding, retrieval, and assistant pipelines, flatt
 ├── main_assistant.py              # Iteration 1 chatbot
 ├── main_assistant_new.py          # Iteration 2 chatbot
 ├── main_assistant_new_one.py      # Iteration 3 chatbot (recommended)
-
+├── main_assistant_new_one_hyb.py  # Iteration 3 chatbot+hyb searching enabled (recommended)
 ├── requirements.txt               # Dependencies
 └── README.md                      # Project documentation
 ```
@@ -85,6 +86,9 @@ python main_assistant_new.py
 
 # Iteration 3 (BLIP + OCR + Semantic Filtering) - Recommended
 python main_assistant_new_one.py
+
+# Iteration 3 (with hybrid searching) (BLIP + OCR + Semantic Filtering) - Recommended
+python main_assistant_new_one_hyb.py
 
 Dataset Details
 All cleaned and processed dataset files are located in the scrapped_dataset/ directory:
