@@ -111,7 +111,6 @@ image_combined_blip_ocr_filtered_final.csv: Final filtered captions + OCR metada
 
 Notes
 Flatten all subfolders into a single directory before running scripts.
-
 Update all relative paths in the scripts if you restructure the project.
 
 Use the latest iteration (main_assistant_new_one.py) for the most accurate and visually grounded responses.
